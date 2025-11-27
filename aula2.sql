@@ -35,7 +35,7 @@ ALTER TABLE alunos ADD COLUMN nota3 DOUBLE;
 SHOW CREATE TABLE alunos;
 
 -- Consultando o id do aluno que contem tal nome
-SELECT id FROM alunos WHERE nome = 'Pedrinho'
+SELECT id FROM alunos WHERE nome = 'Pedrinho';
 UPDATE alunos SET nota1 = 9, nota2 = 8.5, nota3 = 6.5 WHERE id = 1;
 UPDATE alunos SET nota1 = 5, nota2 = 8, nota3 = 1.5 WHERE id = 2;
 UPDATE alunos SET nota1 = 7.5, nota2 = 8.0, nota3 = 6.5 WHERE id = 4;
@@ -197,6 +197,7 @@ SELECT REPLACE(nome, 'i', 'u') FROM alunos;
 
 -- Length
 
+SELECT LENGTH(nome) from alunos;
 
 -- Concat
 
